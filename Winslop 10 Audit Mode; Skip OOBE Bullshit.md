@@ -1,0 +1,1 @@
+Press `Ctrl + Shift + F3`

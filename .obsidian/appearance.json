@@ -1,8 +1,9 @@
 {
   "theme": "obsidian",
-  "textFontFamily": "Inconsolata",
-  "monospaceFontFamily": "Inconsolata",
+  "textFontFamily": "Adwaita Mono",
+  "monospaceFontFamily": "Adwaita Mono",
   "accentColor": "#737373",
   "showViewHeader": false,
-  "showRibbon": false
+  "showRibbon": false,
+  "cssTheme": "Baseline"
 }
