@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QEMU Basics.md",
+                "file": "Holy Grail Sources For Linux System Administration.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "QEMU Basics"
+              "title": "Holy Grail Sources For Linux System Administration"
             }
           }
         ]
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QEMU Basics.md",
+                "file": "Holy Grail Sources For Linux System Administration.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -110,11 +110,11 @@
   },
   "active": "35b381312bb5928b",
   "lastOpenFiles": [
-    "Holy Grail Sources For GNU Linux.md",
-    "Acquire Winslop LTSC + KMS.md",
-    "info ; GNU Linux Tool ; vi-mode Keybindings.md",
     "QEMU Basics.md",
     "Winslop 10 Audit Mode; Skip OOBE Bullshit.md",
+    "Holy Grail Sources For Linux System Administration.md",
+    "Acquire Winslop LTSC + KMS.md",
+    "info ; GNU Linux Tool ; vi-mode Keybindings.md",
     "Winslop 10 OOBE; Stuck On \"Let's connect you to a network\".md",
     "Arch Linux Installation.md",
     "RAW Arch Linux Installation Guide.md",
