@@ -27,12 +27,6 @@ It does:
 - Set `nocow` to `on` which is suggested for BTRFS;
 - Set the size to 12 GiB.
 
-Create socket file pointing at the directory to share:
-
-```bash
-/usr/lib/virtiofsd --socket-path=/tmp/vm-share.sock --shared-dir <dir-path>
-```
-
 Alongside with the `virtiofsd`, run QEMU itself:
 
 ```bash
@@ -53,7 +47,7 @@ It does:
 - Run QEMU for x86_64;
 - Enable KVM;
 - Set CD ROM at `/dev/sdc`;
-- Enable BIOS/UEFI menu;
+- Enable boot menu;
 - Set the drive image at `./disk`;
 - Set VGA backend to QXL;
 - Set graphical toolkit to GTK;
@@ -90,7 +84,7 @@ Install: `edk2-ovmf`
 Copy:
 
 ```bash
-cp /usr/share/edk/x64/OVMF_VARS.4m.fd <path>
+cp /usr/share/edk2/x64/OVMF_VARS.4m.fd <path>
 ```
 
 Add arguments:
@@ -110,6 +104,12 @@ It does:
 ### Host Directory Access 
 
 Install: `virtiofsd`
+
+Create socket file pointing at the directory to share:
+
+```bash
+/usr/lib/virtiofsd --socket-path=/tmp/vm-share.sock --shared-dir <dir-path>
+```
 
 Add arguments:
 
