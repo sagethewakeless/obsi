@@ -11,7 +11,7 @@ http://localhost:631
 # `escputil` Cheatsheet
 
 Tool for maintaining Epson Stylus inkjet printers.
-Package: `gutenprint` (or `escputil` on AUR)
+Package: `gutenprint` (or `escputil` on AUR) %% So, which one then? %%
 
 ## Common flags
 

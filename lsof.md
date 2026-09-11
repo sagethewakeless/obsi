@@ -1,0 +1,1 @@
+The `lsof` lists currently opened files.
