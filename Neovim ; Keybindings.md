@@ -1,5 +1,0 @@
-- `Ctrl + W + `
-	- `S` — Horizontal split;
-	- `V` — Vertical split;
-	- `W` — Switch forcus to the next tab;
-	- `H`/`J`/`K`/`L` — Switch tab forcus in a specific direction;

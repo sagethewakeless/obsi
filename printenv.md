@@ -1,0 +1,1 @@
+Prints all the current environment variables.

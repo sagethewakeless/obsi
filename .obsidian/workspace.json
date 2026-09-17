@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Epson L3150 ; Maintenance Under Arch.md",
+                "file": "Neovim ; Commands & Hotkey.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Epson L3150 ; Maintenance Under Arch"
+              "title": "Neovim ; Commands & Hotkey"
             }
           }
         ]
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Epson L3150 ; Maintenance Under Arch.md",
+                "file": "Neovim ; Commands & Hotkey.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -110,12 +110,13 @@
   },
   "active": "35b381312bb5928b",
   "lastOpenFiles": [
+    "BTRFS ; SWAP File.md",
+    "printenv.md",
+    "Neovim ; Commands & Hotkey.md",
+    "Epson L3150 ; Maintenance Under Arch.md",
     "lsof.md",
     "Holy Grail Sources For Linux System Administration.md",
-    "Neovim ; Keybindings.md",
     "QEMU ; Basics.md",
-    "Epson L3150 ; Maintenance Under Arch.md",
-    "BTRFS ; SWAP File.md",
     "Arch Linux ; Swappiness.md",
     "Acquire Winslop LTSC + KMS.md",
     "Arch Linux ; Package Collection.md",
