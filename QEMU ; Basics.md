@@ -12,7 +12,7 @@ lsmod | grep kvm
 
 # Usage
 
-## System Installation
+## System Installation For x64
 
 Create disk image (storage):
 
@@ -74,6 +74,21 @@ qemu-system-x86_64 \
 ```
 
 Launch. That's it.
+
+## ARM64
+
+```bash
+qemu-system-aarch64 \
+-m 4G \
+-M virt \
+-kernel /mnt/iso/boot/grub/efi.img \
+-drive file=/home/zz/qemu/deb-netinst/drive \
+-display gtk,gl=on \
+-device virtio-gpu-pci
+-drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/aarch64/QEMU_EF
+I.fd \
+-drive if=pflash,format=raw,file=/home/zz/qemu/QEMU_VARS.fd \
+```
 
 ## Extras
 
@@ -160,7 +175,7 @@ sudo chmod 777 /dev/bus/usb/<bus-number>/<device-number>
 %% ^ This part needs a proper fix, not a workaround like that %%
 
 And add these arguments:
-
+k
 ```bash
 -device qemu-xhci,id=xhci \
 -device usb-host,bus=xhci.0,vendorid=0x<vendor-id>,productid=0x<product-id>
