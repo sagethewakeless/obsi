@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Neovim ; Commands & Hotkey.md",
+                "file": "Bash.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Neovim ; Commands & Hotkey"
+              "title": "Bash"
             }
           }
         ]
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Neovim ; Commands & Hotkey.md",
+                "file": "Bash.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -110,13 +110,14 @@
   },
   "active": "35b381312bb5928b",
   "lastOpenFiles": [
-    "Holy Grail Sources For Linux System Administration.md",
     "Neovim ; Commands & Hotkey.md",
+    "Bash.md",
+    "lsof.md",
+    "Holy Grail Sources For Linux System Administration.md",
     "Neovim ; Keybindings.md",
     "BTRFS ; SWAP File.md",
     "printenv.md",
     "Epson L3150 ; Maintenance Under Arch.md",
-    "lsof.md",
     "QEMU ; Basics.md",
     "Arch Linux ; Swappiness.md",
     "Acquire Winslop LTSC + KMS.md",
