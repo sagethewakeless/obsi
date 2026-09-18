@@ -90,6 +90,22 @@ I.fd \
 -drive if=pflash,format=raw,file=/home/zz/qemu/QEMU_VARS.fd \
 ```
 
+## Drafts
+
+```bash
+qemu-system-aarch64 -M virt \
+-m 2G \
+-drive if=pflash,file=/usr/share/AAVMF/AAVMF_CODE.fd,format=raw,readonly=on \
+-drive if=pflash,file=/home/zz/qemu/deb-netinst/AAVMF_VARS.fd,format=raw \
+-device virtio-scsi-pci,id=scsihw0 \
+-drive file=/home/zz/qemu/deb-netinst/debian.iso,if=none,id=cdrom,format=raw,readonly=on \
+-device scsi-cd,bus=scsihw0.0,drive=cdrom,bootindex=100 \
+-device virtio-net-pci \
+-device virtio-gpu \
+-device qemu-xhci \
+-display gtk
+```
+
 ## Extras
 
 ### Install UEFI
@@ -175,7 +191,7 @@ sudo chmod 777 /dev/bus/usb/<bus-number>/<device-number>
 %% ^ This part needs a proper fix, not a workaround like that %%
 
 And add these arguments:
-k
+
 ```bash
 -device qemu-xhci,id=xhci \
 -device usb-host,bus=xhci.0,vendorid=0x<vendor-id>,productid=0x<product-id>
