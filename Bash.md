@@ -32,6 +32,16 @@ MY_VAR
 
 # Scripting
 
+# Shebang
+
+It's conventional to add so called "Shebang" in the beginning of a Bash script file to point the system to the Bash binary file:
+
+```bash
+#!/bin/bash
+```
+
+Then goes the script itself.
+
 ## Syntax
 
 - `# <text>` — Comment;
@@ -65,7 +75,7 @@ if [[ $a -gt 60 -a $b -lt 100 ]]
 
 ### Variables
 
--  `-n $<var>` — True if the variable is **not** empty;
+- `-n $<var>` — True if the variable is **not** empty;
 - `-z $<var>` — True if the variable **is** empty;
 
 ## Keywords

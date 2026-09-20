@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QEMU ; Basics.md",
+                "file": "Resources.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "QEMU ; Basics"
+              "title": "Resources"
             }
           }
         ]
@@ -87,7 +87,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QEMU ; Basics.md",
+                "file": "Resources.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -110,8 +110,9 @@
   },
   "active": "35b381312bb5928b",
   "lastOpenFiles": [
-    "Bash.md",
     "Neovim ; Commands & Hotkey.md",
+    "Resources.md",
+    "Bash.md",
     "lsof.md",
     "Holy Grail Sources For Linux System Administration.md",
     "Neovim ; Keybindings.md",
