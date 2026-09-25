@@ -9,9 +9,7 @@ Make sure virtualization is enabled in the host's UEFI, as well as the `kvm` mod
 ```bash
 lsmod | grep kvm
 ```
-
 # Usage
-
 ## System Installation For x64
 
 Create disk image (storage):
@@ -23,7 +21,7 @@ qemu-img create -f qcow2 <disk-file-path> -o nocow=on 12G
 It does:
 
 - Create an image file with the `qcow2` format;
-- Name it `disk`;
+- Save it at `<disk-file-path>`;
 - Set `nocow` to `on` which is suggested for BTRFS;
 - Set the size to 12 GiB.
 
@@ -37,7 +35,7 @@ qemu-system-x86_64 \
 -drive file=<disk-file-path> \
 -vga qxl \
 -display gtk \
--m 4G \
+-m 4G
 ```
 
 The `-cdrom` flag is the path to the installation image and `-drive` is the VM's drive to install the system onto.
@@ -46,13 +44,12 @@ It does:
 
 - Run QEMU for x86_64;
 - Enable KVM;
-- Set CD ROM at `/dev/sdc`;
+- Set the CD-ROM to the image at `<medium-path>`;
 - Enable boot menu;
-- Set the drive image at `./disk`;
+- Set the drive to the image at `<disk-file-path>`;
 - Set VGA backend to QXL;
 - Set graphical toolkit to GTK;
 - Give 4 GiB of RAM.
-
 ## Post-Installation
 
 After installing the system, shutdown the VM.
@@ -74,7 +71,6 @@ qemu-system-x86_64 \
 ```
 
 Launch. That's it.
-
 ## ARM64
 
 ```bash
@@ -84,12 +80,10 @@ qemu-system-aarch64 \
 -kernel /mnt/iso/boot/grub/efi.img \
 -drive file=/home/zz/qemu/deb-netinst/drive \
 -display gtk,gl=on \
--device virtio-gpu-pci
--drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/aarch64/QEMU_EF
-I.fd \
--drive if=pflash,format=raw,file=/home/zz/qemu/QEMU_VARS.fd \
+-device virtio-gpu-pci \
+-drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/aarch64/QEMU_EFI.fd \
+-drive if=pflash,format=raw,file=/home/zz/qemu/QEMU_VARS.fd
 ```
-
 ## Drafts
 
 ```bash
@@ -105,9 +99,7 @@ qemu-system-aarch64 -M virt \
 -device qemu-xhci \
 -display gtk
 ```
-
 ## Extras
-
 ### Install UEFI
 
 Install: `edk2-ovmf`
@@ -121,7 +113,7 @@ cp /usr/share/edk2/x64/OVMF_VARS.4m.fd <path>
 Add arguments:
 
 ```bash
--drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/x64/OVMF_CODE.4m.fd 
+-drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/x64/OVMF_CODE.4m.fd \
 -drive if=pflash,format=raw,file=<ovmf-vars-file-path>
 ```
 
@@ -131,7 +123,6 @@ It does:
 - Load UEFI variable file from `<ovmf-vars-file-path>`.
 
 > The 1st is read-only, the 2nd one is writable.
-
 ### Host Directory Access 
 
 Install: `virtiofsd`
@@ -159,7 +150,6 @@ It does:
 - Use the memory object `mem`.
 
 %% God knows the reasoning behind the last two %%
-
 ### Printer Passthrough
 
 Find out the printer's vendor and product IDs: `lsusb`
@@ -198,23 +188,18 @@ And add these arguments:
 ```
 
 %% The arguments need more explanation %%
-
 ### Launch With No Network Devices
 
 Use: `-nic none` — Do not configure any network devices.
-
 ### QEMU Monitor
-
 #### Launch & Exit
 
 Press `Ctrl + Alt + 2` when the VM is running.
 
 %% Idk how to exit it yet %%
-
 #### Useful Commands
 
 - `info usb`
-
 ## Hotkeys
 
 - `Ctrl + Alt + `

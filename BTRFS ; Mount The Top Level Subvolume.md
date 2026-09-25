@@ -4,8 +4,8 @@ Inside the working host, create a mount point:
 sudo mkdir /mnt-root
 ```
 
-Then mount the `@` subvolume:
+Then mount the top-level subvolume (always ID 5):
 
 ```bash
-sudo mount -o subvol=@ /dev/sda2 /mnt-root
+sudo mount -o subvolid=5 /dev/sda2 /mnt-root
 ```
