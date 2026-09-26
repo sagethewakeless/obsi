@@ -78,7 +78,7 @@ if [[ $a -gt 60 && $b -lt 100 ]]
 ## Keywords
 ### Input
 
-- `read <variable>` — Reads the user's input and saves it into `variable`;
+- `read <var>` — Reads the user's input and saves it into `var`;
 	- Can be then used or assigned to a different variable by using `$` before the variable's name;
 ### Debug
 #### Script Options With `set`

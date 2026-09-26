@@ -1,6 +1,6 @@
 # Installation
 
-Package: `gutenprint`
+Package: `cups`, `gutenprint`.
 # Web Interface
 
 ```
@@ -8,8 +8,9 @@ http://localhost:631
 ```
 # `escputil` Cheatsheet
 
+(`escputil` provides by `gutenprint)
+
 Tool for maintaining Epson Stylus inkjet printers.
-Package: `gutenprint` — it's bundled inside, no separate package needed on Arch.
 ## Common flags
 
 - `-r /dev/usb/lp0` — talk directly to the USB printer device node
